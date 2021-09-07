@@ -1,5 +1,5 @@
 <h1 align="center">AudioStego v1.0</h1>
-<p align="center">Audio Steganography | Tool to hide secrate msg in audio file......!!!</p><br>
+<p align="center">Audio Steganography | This Tool Can Be Used To Hide Any Secrate Information In A WAV Audio File To Maintain The Anonymity And Security Of Information</p><br>
 
 ## Note:
 
@@ -24,6 +24,48 @@ If output looks like `/usr/bin/python3`, Python 3 is installed properly.
 - No Need Of Any Public Key For Extraction.
 - Audio Stegnography.
 - Easy to use.
+<br>
+
+## Installation:
+
+Run these commands to Install AudioStego On your Linux
+
+### > For Linux:
+
+**Notice:** 
+
+git installation methods are not universal and do differ between distributions,
+so, installing git as per instructions below may not work.
+Please check out how to install `git` for your Linux distribution.
+Commands below provide instructions for Debian-based systems.
+
+To Use AudioStego type the following commands in Linux terminal:
+```
+sudo apt-get install git
+git clone https://github.com/thedarktech/AudioStego.git
+cd AudioStego
+chmod +x setup.sh
+bash setup.sh
+```
+<br>
+
+## Usage
+<p>AudioStego Contains Two Python Scripts. </p>
+<ul>
+<li><b>HideMsg.py :</b> This Script Is Used To Hide Secrate Information / Data In A WAV File</li>
+<li><b>ExtractMsg.py :</b>  This Script Is Used To Extract Secrate Information / Data From A WAV File</li>
+</ul>
+
+### For Hiding Secrate Information In Audio File
+
+```
+python3 HideMsg.py -f < wav file path > -m "< your secrate msg >" -o < Name of Output File>
+```
+### For Extracting Secrate Information From Audio File
+
+```
+python3 ExtractMsg.py -f < File Name In Which Data Is Hidden>
+```
 <br>
 
 ## CONTRIBUTORS:
